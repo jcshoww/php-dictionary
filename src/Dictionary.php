@@ -63,7 +63,6 @@ abstract class Dictionary
      * @param mixed $key
      * 
      * @return mixed
-     * @throws Exception
      */
     public static function getValueByKey($key)
     {
@@ -72,7 +71,7 @@ abstract class Dictionary
         }
         $value = isset(static::getValues()[$key]) ? static::getValues()[$key] : null;
         if ($value === null) {
-            throw new Exception('Dictionary ' . self::class . ' not found value by key <' . $key . '>.');
+            return $value;
         }
 
         return $value;
