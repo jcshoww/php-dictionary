@@ -1,6 +1,5 @@
 {
     "name": "jcshoww/php-dictionary",
-    "version": "1.0.0",
     "description": "Base dictionary class for dictionary entities in projects",
     "homepage": "https://github.com/jcshoww/php-dictionary",
     "license": "MIT",
