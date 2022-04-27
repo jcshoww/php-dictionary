@@ -111,11 +111,11 @@ abstract class Dictionary
     /**
      * Check if key exists.
      * 
-     * @param int $key
+     * @param mixed $key
      * 
      * @return bool
      */
-    public static function exist(int $key): bool
+    public static function exists($key): bool
     {
         return in_array($key, static::getKeys(), true);
     }
